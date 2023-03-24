@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Question from './Question';
 import ResultGrid from './ResultGrid';
 
+
 const Quiz = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
