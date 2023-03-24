@@ -27,6 +27,7 @@ button {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
+  margin-top: 150px;
 }
 
 .quiz-title {
@@ -177,4 +178,11 @@ button {
   text-align: center;
   color: #2d3748;
   margin-bottom: 20px;
+}
+
+.question-counter {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
 }
