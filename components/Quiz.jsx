@@ -1,30 +1,34 @@
 import { useState } from 'react';
 import Question from './Question';
+import ResultGrid from './ResultGrid';
 
 const Quiz = ({ questions }) => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showResults, setShowResults] = useState(false);
+    const [answers, setAnswers] = useState([]);
 
-    const handleAnswer = (isCorrect) => {
+    const handleAnswer = (isCorrect, selectedOption) => {
         if (isCorrect) {
             setScore(score + 1);
         }
+
+        setAnswers([...answers, { isCorrect, userAnswer: selectedOption }]);
+
         if (currentQuestion + 1 < questions.length) {
-            setCurrentQuestion(currentQuestion + 1);
+            setCurrentQuestion(currentQuestion + 1
+            );
         } else {
             setShowResults(true);
         }
     };
 
     return (
+
         <div className="quiz-container">
             {showResults ? (
                 <div className="results-container">
-                    <h2 className="results-title">Resultados</h2>
-                    <p className="results-text">
-                        Acertaste {score} de {questions.length} preguntas.
-                    </p>
+                    <ResultGrid questions={questions} answers={answers} />
                 </div>
             ) : (
                 <Question
@@ -35,5 +39,4 @@ const Quiz = ({ questions }) => {
         </div>
     );
 };
-
 export default Quiz;

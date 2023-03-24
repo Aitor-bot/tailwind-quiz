@@ -100,3 +100,53 @@ button {
   color: #4a148c;
   margin-bottom: 30px;
 }
+
+.result-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.result-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #48bb78;
+}
+
+.incorrect {
+  background-color: #e53e3e;
+}
+
+.result-tooltip {
+  position: absolute;
+  background-color: #2c2e43;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  width: 300px;
+  z-index: 10;
+  margin-top: -150px;
+}
+
+.tooltip-question {
+  font-weight: bold;
+}
+
+.tooltip-answer {
+  margin-top: 5px;
+}
+
+.tooltip-correct-answer {
+  margin-top: 5px;
+  color: #48bb78;
+}
