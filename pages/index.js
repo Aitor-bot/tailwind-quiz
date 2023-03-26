@@ -10,6 +10,14 @@ const inter = Inter({ subsets: ['latin'] })
 import { useState } from 'react';
 import Quiz from '../components/Quiz';
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 
 export default function Home() {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -18,10 +26,13 @@ export default function Home() {
     setShowQuiz(true);
   };
 
+  const shuffledQuestions = shuffleArray(questions);
+
+
   return (
     <div>
       {showQuiz ? (
-        <Quiz questions={questions} />
+        <Quiz questions={shuffledQuestions} />
       ) : (
         <div className="quiz-container">
           <h1 className="quiz-title">Test de Conocimientos sobre Tailwind</h1>

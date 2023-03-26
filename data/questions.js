@@ -115,11 +115,6 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    questionText: '¿Cuál es la clase para aplicar la fuente en cursiva en Tailwind CSS?',
-    options: ['italic', 'text-italic', 'font-italic', 'cursive'],
-    correctAnswer: 2,
-  },
-  {
     questionText: '¿Cuál es la clase para eliminar el subrayado en los enlaces en Tailwind CSS?',
     options: ['no-underline', 'underline-none', 'text-no-underline', 'not-underline'],
     correctAnswer: 0,
@@ -160,16 +155,6 @@ const questions = [
     correctAnswer: 0,
   },
   {
-    questionText: '¿Cuál es la clase para aplicar un borde sólido en Tailwind CSS?',
-    options: ['solid-border', 'border-solid', 'border', 'solid'],
-    correctAnswer: 1,
-  },
-  {
-    questionText: '¿Cuál es la clase para aplicar un borde punteado en Tailwind CSS?',
-    options: ['dotted-border', 'border-dotted', 'border', 'dotted'],
-    correctAnswer: 1,
-  },
-  {
     questionText: '¿Cuál es la clase para aplicar un borde doble en Tailwind CSS?',
     options: ['double-border', 'border-double', 'border', 'double'],
     correctAnswer: 1,
@@ -185,25 +170,221 @@ const questions = [
     correctAnswer: 2,
   },
   {
-    questionText: '¿Cuál es la clase para aplicar un borde en la parte superior de un elemento en Tailwind CSS?',
-    options: ['border-top', 'top-border', 'border-t', 't-border'],
-    correctAnswer: 2,
-  },
-  {
     questionText: '¿Cuál es la clase para aplicar un borde en la parte inferior de un elemento en Tailwind CSS?',
     options: ['border-bottom', 'bottom-border', 'border-b', 'b-border'],
     correctAnswer: 2,
   },
   {
-    questionText: '¿Cuál es la clase para aplicar un borde en la parte izquierda de un elemento en Tailwind CSS?',
-    options: ['border-left', 'left-border', 'border-l', 'l-border'],
+    questionText: '¿Cómo se pueden crear estilos dinámicos en función de los datos de usuario en Tailwind CSS?',
+    options: [
+      'Usar estilos en línea',
+      'Usar JavaScript y las clases de Tailwind',
+      'Agregar estilos dinámicos en el archivo tailwind.config.js',
+      'Usar las directivas @apply y @screen en combinación con JavaScript',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Cuál es la utilidad de Tailwind CSS para aplicar la propiedad "will-change" de CSS?',
+    options: [
+      'will-change-',
+      'change-',
+      'property-',
+      'transform-gpu',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Cómo se crea un espaciado interno en un contenedor en Tailwind CSS?',
+    options: [
+      'padding-inner',
+      'inner-space',
+      'space-inner',
+      'p-inner',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Qué clase se utiliza para crear un diseño en modo cuadrícula en Tailwind CSS?',
+    options: [
+      'flex',
+      'grid',
+      'inline',
+      'table',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    questionText: '¿Qué utilidad se usa para establecer el tamaño máximo de un contenedor en Tailwind CSS?',
+    options: [
+      'max-h',
+      'h-max',
+      'height-max',
+      'max-height',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Cómo se ajusta el espaciado entre columnas en una cuadrícula en Tailwind CSS?',
+    options: [
+      'gap-col',
+      'col-gap',
+      'column-space',
+      'column-gap',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Qué clase se utiliza para hacer que un elemento ocupe todo el ancho del contenedor en Tailwind CSS?',
+    options: [
+      'w-full',
+      'full-width',
+      'width-full',
+      'full',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Qué utilidad se usa para cambiar el tamaño de un elemento en función del tamaño de la pantalla en Tailwind CSS?',
+    options: [
+      'responsive-size',
+      'size-responsive',
+      'screen-size',
+      'w-screen',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Cuál es la clase para crear un efecto de sombra en relieve en Tailwind CSS?',
+    options: [
+      'shadow-up',
+      'shadow-lift',
+      'shadow-raised',
+      'shadow-outset',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Quién es el mejor jugador de Kukoro?',
+    options: [
+      'Snow',
+      'Bulbsum',
+      'Pheralb',
+      'JP',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Qué clase se utiliza para crear un efecto de desenfoque en un elemento en Tailwind CSS?',
+    options: [
+      'blur',
+      'fuzzy',
+      'shadow-blur',
+      'out-of-focus',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Cuál es la utilidad para aplicar la propiedad "backdrop-filter" en Tailwind CSS?',
+    options: [
+      'backdrop-filter-',
+      'backdrop-',
+      'filter-backdrop-',
+      'bd-filter-',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    questionText: '¿Cómo se configura una animación personalizada en Tailwind CSS?',
+    options: [
+      'Definiendo una keyframe y agregándola al objeto "animations"',
+      'Definiendo una keyframe y agregándola al objeto "keyframes"',
+      'Usando el objeto "extend" y definiendo una nueva animación en el objeto "animation"',
+      'Usando el objeto "extend" y definiendo una nueva animación en el objeto "keyframes"',
+    ],
+    correctAnswer: 3,
+  },
+  {
+    questionText: '¿Cómo se aplica el estilo "focus-within" en Tailwind CSS?',
+    options: [
+      'focus-within:',
+      'focus:within',
+      'focus_within:',
+      '@focus-within',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Cómo se puede utilizar una interpolación de CSS personalizada en una clase de Tailwind CSS?',
+    options: [
+      'Usando la función "theme()" en la configuración de Tailwind',
+      'Usando la función "custom()" en la configuración de Tailwind',
+      'Usando la función "interpolate()" en la configuración de Tailwind',
+      'Usando la función "var()" en la configuración de Tailwind',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Cómo se pueden aplicar estilos específicos a un tema oscuro en Tailwind CSS?',
+    options: [
+      'Usando la clase "dark:"',
+      'Usando la directiva "@dark"',
+      'Usando la clase "theme-dark:"',
+      'Usando la directiva "@theme-dark"',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Qué utilidad se usa para establecer la posición "sticky" en Tailwind CSS?',
+    options: [
+      'sticky',
+      'position-sticky',
+      'sticky-position',
+      'stuck',
+    ],
     correctAnswer: 2,
   },
   {
-    questionText: '¿Cuál es la clase para aplicar un borde en la parte derecha de un elemento en Tailwind CSS?',
-    options: ['border-right', 'right-border', 'border-r', 'r-border'],
+    questionText: '¿Qué utilidad se usa para aplicar un desplazamiento a un elemento en Tailwind CSS?',
+    options: [
+      'move',
+      'offset',
+      'translate',
+      'shift',
+    ],
     correctAnswer: 2,
   },
+  {
+    questionText: '¿Qué utilidad se utiliza para establecer el orden de un elemento en un contenedor Flexbox en Tailwind CSS?',
+    options: [
+      'flex-order',
+      'order-flex',
+      'order',
+      'z-order',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    questionText: '¿Cuál es el número máximo de capas que se pueden utilizar simultáneamente en Tailwind CSS?',
+    options: [
+      'No hay límite',
+      '32',
+      '64',
+      '128',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    questionText: '¿Qué propiedad CSS se modifica al utilizar la clase "scale-x-110" en Tailwind CSS?',
+    options: [
+      'width',
+      'transform',
+      'scaleX',
+      'scale',
+    ],
+    correctAnswer: 1,
+  }
+
 ];
 
 
