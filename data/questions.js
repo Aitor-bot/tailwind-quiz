@@ -35,9 +35,14 @@ const questions = [
     correctAnswer: 0,
   },
   {
-    questionText: '¿Cómo se especifica un color de fondo en Tailwind CSS?',
-    options: ['bg-color', 'bg-colorname', 'color-bg-name', 'background-colorname'],
-    correctAnswer: 1,
+    questionText: '¿Cómo aplicas un color de fondo utilizando Tailwind CSS?',
+    options: [
+      'bg-color-[color]',
+      'background-[color]',
+      'bg-[color]-[variant]',
+      'background-color-[color]-[variant]',
+    ],
+    correctAnswer: 2,
   },
   {
     questionText: '¿Cómo se aplica el estilo hover en Tailwind CSS?',
@@ -95,9 +100,14 @@ const questions = [
     correctAnswer: 0,
   },
   {
-    questionText: '¿Qué utilidad se usa para aplicar un margen en Tailwind CSS?',
-    options: ['margin-', 'm-', 'mg-', 'mr-'],
-    correctAnswer: 1,
+    questionText: '¿Cuál es la clase para aplicar un margen a todos los lados de un elemento en Tailwind CSS?',
+    options: [
+      'm-[value]',
+      'margin-all-[value]',
+      'mx-[value] my-[value]',
+      'margin-[value]',
+    ],
+    correctAnswer: 0,
   },
   {
     questionText: '¿Cuál es la sintaxis para aplicar un estilo solo en pantallas grandes en Tailwind CSS?',
@@ -259,10 +269,10 @@ const questions = [
     options: [
       'shadow-up',
       'shadow-lift',
-      'shadow-raised',
+      'shadow-sm, shadow, shadow-md, shadow-lg, shadow-xl, shadow-2xl',
       'shadow-outset',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
   },
   {
     questionText: '¿Quién es el mejor jugador de Kukoro?',
