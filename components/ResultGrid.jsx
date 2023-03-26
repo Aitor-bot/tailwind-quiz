@@ -13,6 +13,9 @@ const ResultGrid = ({ questions, answers }) => {
 
     const totalCorrect = answers.filter((answer) => answer.isCorrect).length;
     const totalQuestions = questions.length;
+    const score = (totalCorrect / totalQuestions) * 10;
+    const roundedScore = Math.round(score * 10) / 10;
+
 
     return (
         <div>
@@ -24,7 +27,7 @@ const ResultGrid = ({ questions, answers }) => {
                 único mensaje configurado.
             </p>
             <p className="score-text">
-                Has acertado {totalCorrect} preguntas de {totalQuestions}
+                Tu nota es: {roundedScore} <br></br>
             </p>
 
             <div className="result-grid">

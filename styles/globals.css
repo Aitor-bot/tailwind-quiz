@@ -153,11 +153,11 @@ button {
 }
 
 .correct {
-  background-color: #48bb78;
+  background-color: #0E6E8B;
 }
 
 .incorrect {
-  background-color: #e53e3e;
+  background-color: #c65050;
 }
 
 .result-tooltip {
