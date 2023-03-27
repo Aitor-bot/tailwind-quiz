@@ -2,12 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import questions from '../data/questions';
-
-
+import axios from 'axios';
 const inter = Inter({ subsets: ['latin'] })
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Quiz from '../components/Quiz';
 
 function shuffleArray(array) {
@@ -18,21 +16,37 @@ function shuffleArray(array) {
   return array;
 }
 
-
 export default function Home() {
   const [showQuiz, setShowQuiz] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [questions, setQuestions] = useState(false);
+
+  useEffect(() => {
+    async function fetchVideos() {
+      try {
+        const response = await axios.get("https://twquiz-api.vercel.app/questions");
+        setQuestions(shuffleArray(response.data));
+        console.log(response.data)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchVideos();
+  }, []);
 
   const onStartClick = () => {
     setShowQuiz(true);
   };
 
-  const shuffledQuestions = shuffleArray(questions);
-
-
   return (
     <div>
       {showQuiz ? (
-        <Quiz questions={shuffledQuestions} />
+        questions.length > 0 ? (
+          <Quiz questions={questions} />
+        ) : (
+          <p>Cargando preguntas...</p>
+        )
       ) : (
         <div className="quiz-container">
           <h1 className="quiz-title">Test de Conocimientos sobre Tailwind</h1>

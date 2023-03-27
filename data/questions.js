@@ -71,7 +71,7 @@ const questions = [
   },
   {
     questionText: '¿Qué utilidad se usa para ocultar un elemento en Tailwind CSS?',
-    options: ['hidden', 'opacity-0', 'hide', 'invisible'],
+    options: ['hidden', 'hide-0', 'hide', 'invisible'],
     correctAnswer: 0,
   },
   {
@@ -225,14 +225,14 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    questionText: '¿Qué utilidad se usa para establecer el tamaño máximo de un contenedor en Tailwind CSS?',
+    questionText: '¿Qué utilidad se usa para establecer el tamaño máximo de un contenedor en altura en Tailwind CSS?',
     options: [
-      'max-h',
+      'max-h-{size}',
       'h-max',
       'height-max',
       'max-height',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     questionText: '¿Cómo se ajusta el espaciado entre columnas en una cuadrícula en Tailwind CSS?',
@@ -240,7 +240,7 @@ const questions = [
       'gap-col',
       'col-gap',
       'column-space',
-      'column-gap',
+      'gap-[medida]',
     ],
     correctAnswer: 3,
   },
@@ -352,14 +352,14 @@ const questions = [
       'sticky-position',
       'stuck',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
-    questionText: '¿Qué utilidad se usa para aplicar un desplazamiento a un elemento en Tailwind CSS?',
+    questionText: '¿Qué utilidad se usa para aplicar un desplazamiento en el eje X o Y a un elemento en Tailwind CSS?',
     options: [
       'move',
       'offset',
-      'translate',
+      'translate-x-[medida] y translate-y-[medida]',
       'shift',
     ],
     correctAnswer: 2,
