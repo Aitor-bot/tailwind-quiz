@@ -38,7 +38,7 @@ export default function Home() {
           <h1 className="quiz-title">Test de Conocimientos sobre Tailwind</h1>
           <p className="quiz-description">
             Responde a estas 50 preguntas para
-            medir tus conocimientos en Tailwind. ¡Buena suerte, Aforcita!
+            medir tus conocimientos en Tailwind. <br></br> ¡Buena suerte, Aforcita!
           </p>
           <button className="quiz-button" onClick={onStartClick}>
             Comenzar

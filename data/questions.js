@@ -365,7 +365,7 @@ const questions = [
     correctAnswer: 2,
   },
   {
-    questionText: '¿Qué utilidad se utiliza para establecer el orden de un elemento en un contenedor Flexbox en Tailwind CSS?',
+    questionText: '¿Qué utilidad se usa para establecer el orden de un elemento en un contenedor Flexbox en Tailwind CSS?',
     options: [
       'flex-order',
       'order-flex',
