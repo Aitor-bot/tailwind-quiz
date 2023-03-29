@@ -22,12 +22,12 @@ const questions = [
   {
     questionText: '¿Qué archivo se utiliza para configurar Tailwind CSS?',
     options: [
-      'tailwind.config.js',
       'tailwind.js',
       'tailwind.config.json',
       'config.tailwind.js',
+      'tailwind.config.js',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
   },
   {
     questionText: '¿Cuál es el prefijo por defecto para las clases de espacio entre elementos en Tailwind CSS?',
@@ -46,8 +46,8 @@ const questions = [
   },
   {
     questionText: '¿Cómo se aplica el estilo hover en Tailwind CSS?',
-    options: ['hover:', 'hover-', '@hover', ':hover'],
-    correctAnswer: 0,
+    options: ['hover-', '@hover', ':hover', 'hover:'],
+    correctAnswer: 3,
   },
   {
     questionText: '¿Cuál es la clase para aplicar un borde redondeado en Tailwind CSS?',
@@ -61,7 +61,7 @@ const questions = [
   },
   {
     questionText: '¿Cuál es la propiedad CSS modificada por la clase "text-left" en Tailwind CSS?',
-    options: ['text-align', 'line-height', 'text-decoration', 'font-style'],
+    options: ['line-height', 'text-decoration', 'font-style', 'text-align'],
     correctAnswer: 0,
   },
   {
@@ -77,12 +77,12 @@ const questions = [
   {
     questionText: '¿Cómo se define una variante personalizada en la configuración de Tailwind CSS?',
     options: [
-      'Usando el objeto "variants"',
       'Usando el objeto "custom"',
       'Usando el objeto "plugins"',
       'Usando el objeto "extend"',
+      'Usando el objeto "variants"'
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
   },
   {
     questionText: '¿Cuál es la clase para aplicar un margen a todos los lados de un elemento en Tailwind CSS?',
@@ -96,7 +96,7 @@ const questions = [
   },
   {
     questionText: '¿Cuál es la sintaxis para aplicar un estilo solo en pantallas grandes en Tailwind CSS?',
-    options: ['lg:style', 'style-lg', 'large:style', 'lg-style'],
+    options: ['style-lg', 'large:style', 'lg-style', 'lg:style'],
     correctAnswer: 0,
   },
   {
@@ -111,8 +111,8 @@ const questions = [
   },
   {
     questionText: '¿Cuál es la clase para eliminar el subrayado en los enlaces en Tailwind CSS?',
-    options: ['no-underline', 'underline-none', 'text-no-underline', 'not-underline'],
-    correctAnswer: 0,
+    options: ['underline-none', 'text-no-underline', 'not-underline', 'no-underline'],
+    correctAnswer: 3,
   },
   {
     questionText: '¿Qué utilidad se usa para aplicar un borde en Tailwind CSS?',
