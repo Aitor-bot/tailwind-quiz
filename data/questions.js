@@ -30,7 +30,7 @@ const questions = [
     correctAnswer: 3,
   },
   {
-    questionText: '¿Cuál es el prefijo por defecto para las clases de espacio entre elementos en Tailwind CSS?',
+    questionText: '¿Cuál es el prefijo por defecto para las clases de espacio entre elementos en Tailwind CSS en grid y flexbox?',
     options: ['gap-', 'm-', 'p-', 'space-'],
     correctAnswer: 0,
   },
@@ -62,7 +62,7 @@ const questions = [
   {
     questionText: '¿Cuál es la propiedad CSS modificada por la clase "text-left" en Tailwind CSS?',
     options: ['line-height', 'text-decoration', 'font-style', 'text-align'],
-    correctAnswer: 0,
+    correctAnswer: 3,
   },
   {
     questionText: '¿Cuál es la clase para aplicar una sombra a un elemento en Tailwind CSS?',
@@ -75,14 +75,14 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    questionText: '¿Cómo se define una variante personalizada en la configuración de Tailwind CSS?',
+    questionText: '¿Cómo se define una variante a medida en la configuración de Tailwind CSS?',
     options: [
       'Usando el objeto "custom"',
       'Usando el objeto "plugins"',
       'Usando el objeto "extend"',
       'Usando el objeto "variants"'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     questionText: '¿Cuál es la clase para aplicar un margen a todos los lados de un elemento en Tailwind CSS?',
@@ -95,9 +95,9 @@ const questions = [
     correctAnswer: 0,
   },
   {
-    questionText: '¿Cuál es la sintaxis para aplicar un estilo solo en pantallas grandes en Tailwind CSS?',
+    questionText: '¿Cuál es la sintaxis para aplicar un estilo a partir de pantallas grandes en Tailwind CSS?',
     options: ['style-lg', 'large:style', 'lg-style', 'lg:style'],
-    correctAnswer: 0,
+    correctAnswer: 3,
   },
   {
     questionText: '¿Qué utilidad se usa para aplicar un relleno en Tailwind CSS?',
@@ -145,7 +145,7 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    questionText: '¿Cuál es la utilidad para cambiar la alineación vertical de un elemento en Tailwind CSS?',
+    questionText: '¿Cuál es la utilidad para cambiar la alineación vertical de un elemento con grid/flexbox en Tailwind CSS?',
     options: ['align-items-', 'vertical-align-', 'align-self-', 'items-align-'],
     correctAnswer: 2,
   },
@@ -162,7 +162,7 @@ const questions = [
       'Agregar estilos dinámicos en el archivo tailwind.config.js',
       'Usar las directivas @apply y @screen en combinación con JavaScript',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     questionText: '¿Cuál es la utilidad de Tailwind CSS para aplicar la propiedad "will-change" de CSS?',
@@ -172,7 +172,7 @@ const questions = [
       'property-',
       'transform-gpu',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     questionText: '¿Qué clase se utiliza para crear un diseño en modo cuadrícula en Tailwind CSS?',
@@ -197,7 +197,7 @@ const questions = [
   {
     questionText: '¿Cómo se ajusta el espaciado entre columnas en una cuadrícula en Tailwind CSS?',
     options: [
-      'gap-col',
+      'gap-y-[medida]',
       'col-gap',
       'column-space',
       'gap-[medida]',
@@ -337,35 +337,33 @@ const questions = [
   {
     questionText: '¿Cuál es la clase en Tailwind CSS para aplicar la propiedad "mix-blend-mode" con un valor de "multiply"?',
     options: [
-    'multiply',
-    'blend-multiply',
-    'mix-multiply',
-    'mix-blend-multiply',
+      'multiply',
+      'blend-multiply',
+      'mix-multiply',
+      'mix-blend-multiply',
     ],
     correctAnswer: 3,
-    },
-    {
-      questionText: '¿Cuál es la utilidad en Tailwind CSS para aplicar la propiedad "object-fit" con un valor de "cover"?',
-      options: [
+  },
+  {
+    questionText: '¿Cuál es la utilidad en Tailwind CSS para aplicar la propiedad "object-fit" con un valor de "cover"?',
+    options: [
       'fit-cover',
       'cover-fit',
       'object-cover',
       'object-fit-cover',
-      ],
-      correctAnswer: 2,
-      },
-      {
-        questionText: '¿Quién es el mejor artista en el Gartic?',
-        options: [
-        'Afro',
-        'Willyrex',
-        'PadawansTrainer',
-        'Manz',
-        ],
-        correctAnswer: 3,
-        }
+    ],
+    correctAnswer: 2,
+  },
+  {
+    questionText: '¿Quién es el mejor artista en el Gartic?',
+    options: [
+      'Afro',
+      'Willyrex',
+      'PadawansTrainer',
+      'Manz',
+    ],
+    correctAnswer: 3,
+  }
 
 ];
-
-
 export default questions;
