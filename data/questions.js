@@ -55,21 +55,6 @@ const questions = [
     correctAnswer: 3,
   },
   {
-    questionText: '¿Qué utilidad de posición se utiliza para centrar un elemento en Tailwind CSS?',
-    options: ['center', 'position-center', 'absolute-center', 'relative-center'],
-    correctAnswer: 2,
-  },
-  {
-    questionText: '¿Cómo se aplica un gradiente en el fondo de un elemento en Tailwind CSS?',
-    options: [
-      'bg-gradient',
-      'gradient-bg',
-      'bg-gradient-color',
-      'gradient-bg-color',
-    ],
-    correctAnswer: 2,
-  },
-  {
     questionText: '¿Qué utilidad se usa para ocultar un elemento en Tailwind CSS?',
     options: ['hidden', 'hide-0', 'hide', 'invisible'],
     correctAnswer: 0,
@@ -150,16 +135,6 @@ const questions = [
     correctAnswer: 0,
   },
   {
-    questionText: '¿Cuál es el prefijo para aplicar estilos de tipografía en Tailwind CSS?',
-    options: ['font-', 'typo-', 'type-', 'text-'],
-    correctAnswer: 3,
-  },
-  {
-    questionText: '¿Cuál es la clase para aplicar una línea de separación en Tailwind CSS?',
-    options: ['strike', 'line-through', 'line', 'strikethrough'],
-    correctAnswer: 1,
-  },
-  {
     questionText: '¿Qué utilidad se usa para cambiar el cursor en Tailwind CSS?',
     options: ['cursor-', 'mouse-', 'pointer-', 'cursor:'],
     correctAnswer: 0,
@@ -168,11 +143,6 @@ const questions = [
     questionText: '¿Cuál es la clase para aplicar un borde doble en Tailwind CSS?',
     options: ['double-border', 'border-double', 'border', 'double'],
     correctAnswer: 1,
-  },
-  {
-    questionText: '¿Cuál es la utilidad para cambiar la altura de línea en Tailwind CSS?',
-    options: ['line-height-', 'lh-', 'leading-', 'height-line-'],
-    correctAnswer: 2,
   },
   {
     questionText: '¿Cuál es la utilidad para cambiar la alineación vertical de un elemento en Tailwind CSS?',
@@ -201,16 +171,6 @@ const questions = [
       'change-',
       'property-',
       'transform-gpu',
-    ],
-    correctAnswer: 3,
-  },
-  {
-    questionText: '¿Cómo se crea un espaciado interno en un contenedor en Tailwind CSS?',
-    options: [
-      'padding-inner',
-      'inner-space',
-      'space-inner',
-      'p-inner',
     ],
     correctAnswer: 3,
   },
@@ -305,32 +265,12 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    questionText: '¿Cómo se configura una animación personalizada en Tailwind CSS?',
-    options: [
-      'Definiendo una keyframe y agregándola al objeto "animations"',
-      'Definiendo una keyframe y agregándola al objeto "keyframes"',
-      'Usando el objeto "extend" y definiendo una nueva animación en el objeto "animation"',
-      'Usando el objeto "extend" y definiendo una nueva animación en el objeto "keyframes"',
-    ],
-    correctAnswer: 3,
-  },
-  {
     questionText: '¿Cómo se aplica el estilo "focus-within" en Tailwind CSS?',
     options: [
       'focus-within:',
       'focus:within',
       'focus_within:',
       '@focus-within',
-    ],
-    correctAnswer: 0,
-  },
-  {
-    questionText: '¿Cómo se puede utilizar una interpolación de CSS personalizada en una clase de Tailwind CSS?',
-    options: [
-      'Usando la función "theme()" en la configuración de Tailwind',
-      'Usando la función "custom()" en la configuración de Tailwind',
-      'Usando la función "interpolate()" en la configuración de Tailwind',
-      'Usando la función "var()" en la configuración de Tailwind',
     ],
     correctAnswer: 0,
   },
@@ -393,7 +333,37 @@ const questions = [
       'scale',
     ],
     correctAnswer: 1,
-  }
+  },
+  {
+    questionText: '¿Cuál es la clase en Tailwind CSS para aplicar la propiedad "mix-blend-mode" con un valor de "multiply"?',
+    options: [
+    'multiply',
+    'blend-multiply',
+    'mix-multiply',
+    'mix-blend-multiply',
+    ],
+    correctAnswer: 3,
+    },
+    {
+      questionText: '¿Cuál es la utilidad en Tailwind CSS para aplicar la propiedad "object-fit" con un valor de "cover"?',
+      options: [
+      'fit-cover',
+      'cover-fit',
+      'object-cover',
+      'object-fit-cover',
+      ],
+      correctAnswer: 2,
+      },
+      {
+        questionText: '¿Quién es el mejor artista en el Gartic?',
+        options: [
+        'Afro',
+        'Willyrex',
+        'PadawansTrainer',
+        'Manz',
+        ],
+        correctAnswer: 3,
+        }
 
 ];
 
