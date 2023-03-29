@@ -31,6 +31,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>AfordiTest</title>
+      </Head>
       {showQuiz ? (
         <Quiz questions={shuffledQuestions} />
       ) : (
