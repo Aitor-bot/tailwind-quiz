@@ -103,6 +103,11 @@ button {
   gap: 10px;
   cursor: pointer;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
 .quiz-option {
@@ -113,6 +118,7 @@ button {
   border-radius: 5px;
   text-align: center;
   border: 2px solid #0E6E8B;
+
 }
 
 .quiz-option:hover {
