@@ -79,8 +79,14 @@ button {
   font-weight: bold;
 }
 
-.quiz-button:hover {
+.quiz-button:hover:not(:disabled) {
   background-color: #8750c6;
+}
+
+.quiz-button:disabled {
+  background-color: #7b1fa2;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .quiz-question {
