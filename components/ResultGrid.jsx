@@ -16,15 +16,14 @@ const ResultGrid = ({ questions, answers }) => {
     const score = (totalCorrect / totalQuestions) * 10;
     const roundedScore = Math.round(score * 10) / 10;
 
+    const statusText = roundedScore >= 5 ? "¡Felicidades!" : "Oh, no...";
+
+
 
     return (
         <div>
-            <h2 className="approved-text">APROBADO</h2>
+            <h2 className="status-text">{statusText}</h2>
             <p className="congratulations-text">
-                ¡Felicidades, Aforcita! Todos confiábamos en ti... ni LinkedIn ni
-                hostias, acabas de aprobar el mejor y más complicado examen del mundo.
-                Saca clip y pide un aumento ya. Porque has aprobado, ¿verdad? Este es el
-                único mensaje configurado.
             </p>
             <p className="score-text">
                 Tu nota es: {roundedScore} <br></br>

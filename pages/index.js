@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>AfordiTest</title>
+        <title>Tailwind quiz</title>
       </Head>
       {showQuiz ? (
         <Quiz questions={shuffledQuestions} />
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="quiz-container">
           <h1 className="quiz-title">Test de Conocimientos sobre Tailwind</h1>
           <p className="quiz-description">
-            Chat, calladitos y atentos. Esto es historia. <br></br> ¡Buena suerte, Aforcita!
+            Son 25 preguntas de dificultad variada.<br></br> ¡Buena suerte!
           </p>
           <button className="quiz-button" onClick={onStartClick}>
             Comenzar
